@@ -120,6 +120,79 @@ section h2 {
     margin-bottom: 2rem;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav .logo a {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-preview {
+        padding: 60px 20px;
+    }
+
+    .about-preview h2 {
+        font-size: 2rem;
+    }
+
+    .about-preview p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 2rem;
+}
+
 /* Hero Section */
 .hero {
     background: #0066cc;
@@ -187,6 +260,47 @@ section h2 {
 
 .about-preview .btn {
     border-color: #0066cc;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.cta .btn {
+    background-color: white;
+    color: #0066cc;
+    border-color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.cta .btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Skills Grid */
@@ -389,6 +503,68 @@ footer a:hover {
 
 .social-links a {
     margin: 0 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav .logo a {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-preview {
+        padding: 60px 20px;
+    }
+
+    .about-preview h2 {
+        font-size: 2rem;
+    }
+
+    .about-preview p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
 }
 
 /* Responsive */
