@@ -196,90 +196,103 @@ section h2 {
    =================================== */
 
 footer {
-    background: linear-gradient(135deg, #003366 0%, #001a33 100%);
-    color: white;
-    padding: 40px 20px 20px;
+    background: #003366;
+    color: #e0e6ed;
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.footer-section {
+    text-align: center;
 }
 
 .footer-section h3 {
     color: #4da6ff;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
 }
 
 .footer-section p {
-    color: #cccccc;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
+    color: #b8c5d6;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
     font-size: 0.95rem;
 }
 
 .footer-section .location {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    justify-content: center;
+    gap: 0.5rem;
     font-size: 1rem;
+    color: #b8c5d6;
 }
 
 .footer-section .icon {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .footer-links a {
-    color: #cccccc;
+    color: #b8c5d6;
     text-decoration: none;
-    transition: color 0.3s, padding-left 0.3s;
-    display: inline-block;
+    transition: color 0.2s ease;
     font-size: 0.95rem;
 }
 
 .footer-links a:hover {
     color: #4da6ff;
-    padding-left: 8px;
 }
 
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.75rem;
     margin: 1rem 0;
 }
 
 .social-links a {
-    color: #cccccc;
+    color: #4da6ff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
 .social-links a:hover {
-    color: #4da6ff;
+    color: #80b3ff;
 }
 
 .contact-info {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    justify-content: center;
+    gap: 0.5rem;
     margin-top: 0.5rem;
     font-size: 0.95rem;
 }
@@ -296,14 +309,119 @@ footer {
     grid-column: 1 / -1;
     text-align: center;
     padding-top: 1.5rem;
+    margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 1.5rem;
 }
 
 .footer-bottom p {
-    color: #999;
+    color: #7a8ca5;
     font-size: 0.85rem;
-    margin: 0.2rem 0;
+    margin: 0.3rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-section h3 {
+    color: #4da6ff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #b8c5d6;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.footer-section .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #b8c5d6;
+}
+
+.footer-section .icon {
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #b8c5d6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #4da6ff;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #80b3ff;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: #4da6ff;
+}
+
+.contact-info a:hover {
+    color: #80b3ff;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: #7a8ca5;
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
 }
 
 /* ===================================
