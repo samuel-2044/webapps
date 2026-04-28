@@ -87,6 +87,18 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
+    .about-preview {
+        padding: 60px 20px;
+    }
+
+    .about-preview h2 {
+        font-size: 2rem;
+    }
+
+    .about-preview p {
+        font-size: 1rem;
+    }
+
     section {
         padding: 40px 0;
     }
@@ -147,6 +159,34 @@ section h2 {
 
 .btn:hover {
     background-color: #004499;
+}
+
+/* About Preview Section */
+.about-preview {
+    background-color: white;
+    padding: 80px 20px;
+}
+
+.about-preview .container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.about-preview h2 {
+    color: #0066cc;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.about-preview p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.about-preview .btn {
+    border-color: #0066cc;
 }
 
 /* Skills Grid */
@@ -278,7 +318,55 @@ section h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav .logo a {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 0.3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-preview {
+        padding: 60px 20px;
+    }
+
+    .about-preview h2 {
+        font-size: 2rem;
+    }
+
+    .about-preview p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
 footer {
     background-color: #0066cc;
     color: white;
