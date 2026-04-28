@@ -76,7 +76,7 @@ nav ul li a:hover {
     }
 
     .hero {
-        padding: 50px 0;
+        padding: 50px 20px;
     }
 
     .hero h1 {
@@ -113,7 +113,12 @@ section h2 {
     background: #0066cc;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -124,6 +129,7 @@ section h2 {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 /* Buttons */
@@ -319,7 +325,7 @@ footer a:hover {
     }
 
     .hero {
-        padding: 50px 0;
+        padding: 50px 20px;
     }
 
     .hero h1 {
