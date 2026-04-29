@@ -262,6 +262,16 @@ footer {
     text-align: center;
 }
 
+footer p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .footer-container {
     max-width: 1100px;
     margin: 0 auto;
