@@ -172,6 +172,59 @@ section h2 {
 }
 
 /* ===================================
+   SKILLS SECTION (Homepage)
+   =================================== */
+
+.skills-preview {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.skills-preview .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills-preview h2 {
+    color: #0066cc;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid #0066cc;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item h3 {
+    color: #003366;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.skill-item p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ===================================
    BUTTONS (Global)
    =================================== */
 
@@ -691,6 +744,23 @@ footer {
         font-size: 1rem;
     }
 
+    .skills-preview h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        padding: 1.5rem;
+    }
+
+    .skill-item h3 {
+        font-size: 1.2rem;
+    }
+
     .cta {
         padding: 60px 20px;
     }
@@ -775,7 +845,8 @@ footer {
     }
 
     .about-preview h2,
-    .cta h2 {
+    .cta h2,
+    .skills-preview h2 {
         font-size: 1.8rem;
     }
 
