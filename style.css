@@ -110,9 +110,15 @@ nav ul li a:hover {
     color: #444;
     margin-bottom: 2rem;
 }
+.about-preview a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 10px;
+}
 
 .about-preview .btn {
     border-color: #0066cc;
+    color: white;
 }
 
 /* Call to Action Section */
