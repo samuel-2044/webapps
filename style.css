@@ -357,11 +357,13 @@ footer {
 }
 
 .contact-info a {
-    color: #4da6ff;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .contact-info a:hover {
-    color: #80b3ff;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .footer-bottom {
