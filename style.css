@@ -1,6 +1,4 @@
-/* ===================================
-   GLOBAL & RESET STYLES
-   =================================== */
+/*-----global------*/
 
 * {
     margin: 0;
@@ -21,9 +19,7 @@ body {
     padding: 0 20px;
 }
 
-/* ===================================
-   HEADER & NAVIGATION
-   =================================== */
+/*-----header------*/
 
 header {
     background-color: #003366;
@@ -59,11 +55,7 @@ nav ul li a:hover {
     color: #0066cc;
 }
 
-/* ===================================
-   HOMEPAGE SECTIONS
-   =================================== */
-
-/* Hero Section */
+/*-----hero------*/
 .hero {
     background: #0066cc;
     color: white;
@@ -87,7 +79,7 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* About Preview Section */
+/*-----about------*/
 .about-preview {
     background-color: white;
     padding: 80px 20px;
@@ -121,7 +113,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Call to Action Section */
+/*-----cta------*/
 .cta {
     background: linear-gradient(135deg, #0066cc 0%, #003366 100%);
     color: white;
@@ -162,7 +154,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Homepage Common Styles */
+/*-----section------*/
 main {
     min-height: calc(100vh - 140px);
 }
@@ -177,9 +169,7 @@ section h2 {
     margin-bottom: 2rem;
 }
 
-/* ===================================
-   SKILLS SECTION (Homepage)
-   =================================== */
+/*-----skills------*/
 
 .skills-preview {
     background-color: #f9f9f9;
@@ -230,10 +220,66 @@ section h2 {
     line-height: 1.6;
 }
 
-/* ===================================
-   BUTTONS (Global)
-   =================================== */
+/*-----contact------*/
 
+.contact-page {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-page h1,
+.contact-page p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-page form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.contact-page input,
+.contact-page textarea,
+.contact-page button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.contact-page textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-page button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact-page button:hover {
+    background: #003366;
+}
+
+/*-----buttons------*/
 .btn {
     display: inline-block;
     background-color: #0066cc;
@@ -250,35 +296,21 @@ section h2 {
     background-color: #004499;
 }
 
-/* ===================================
-   FOOTER
-   =================================== */
+/*-----footer------*/
 
 footer {
     background: #003366;
     color: #e0e6ed;
     padding: 3rem 2rem 1.5rem;
     margin-top: 2rem;
-    text-align: center;
-}
-
-footer p a {
-    color: #d71212;
-    text-decoration: none;
-}
-
-footer p a:hover {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 .footer-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
 }
 
 .footer-section {
@@ -304,7 +336,6 @@ footer p a:hover {
 .footer-section .location {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.5rem;
     font-size: 1rem;
     color: #b8c5d6;
@@ -320,116 +351,6 @@ footer p a:hover {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.footer-links li {
-    margin-bottom: 0.6rem;
-}
-
-.footer-links a {
-    color: #b8c5d6;
-    text-decoration: none;
-    transition: color 0.2s ease;
-    font-size: 0.95rem;
-}
-
-.footer-links a:hover {
-    color: #4da6ff;
-}
-
-.social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-    margin: 1rem 0;
-}
-
-.social-links a {
-    color: #4da6ff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-}
-
-.social-links a:hover {
-    color: #80b3ff;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.contact-info a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding-top: 1.5rem;
-    margin-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-    color: #7a8ca5;
-    font-size: 0.85rem;
-    margin: 0.3rem 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
-}
-
-.footer-section h3 {
-    color: #4da6ff;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-}
-
-.footer-section p {
-    color: #b8c5d6;
-    line-height: 1.7;
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-}
-
-.footer-section .location {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-    color: #b8c5d6;
-}
-
-.footer-section .icon {
-    font-size: 1.1rem;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .footer-links li {
@@ -495,9 +416,7 @@ footer p a:hover {
     margin: 0.3rem 0;
 }
 
-/* ===================================
-   ABOUT PAGE
-   =================================== */
+/*-----about page------*/
 
 #about .container {
     max-width: 900px;
@@ -562,9 +481,7 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-/* ===================================
-   PROJECTS PAGE
-   =================================== */
+/*-----project------*/
 
 .project-grid {
     display: grid;
@@ -598,9 +515,7 @@ footer p a:hover {
     margin-bottom: 1.5rem;
 }
 
-/* ===================================
-   GALLERY PAGE
-   =================================== */
+/*-----gallery------*/
 
 .gallery-grid {
     display: grid;
@@ -628,9 +543,7 @@ footer p a:hover {
     color: #0066cc;
 }
 
-/* ===================================
-   FAQs PAGE
-   =================================== */
+/*-----faq------*/
 
 .faq-list {
     max-width: 800px;
@@ -659,65 +572,7 @@ footer p a:hover {
 }
 
 /* ===================================
-   CONTACT PAGE
-   =================================== */
-
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-}
-
-.contact-info > div {
-    text-align: center;
-    margin: 1rem;
-}
-
-.contact-info > div h3 {
-    color: #0066cc;
-    margin-bottom: 0.5rem;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #0066cc;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #003366;
-    border-radius: 4px;
-    background-color: #f0f8ff;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-/* ===================================
-   RESPONSIVE STYLES (Single Global)
+   RESPONSIVE STYLES
    =================================== */
 
 @media (max-width: 768px) {
@@ -826,29 +681,9 @@ footer p a:hover {
         font-size: 1rem;
     }
 
-    /* Footer */
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        text-align: center;
-    }
-
-    .footer-section .location {
-        justify-content: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .contact-info {
-        justify-content: center;
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* Contact Page */
+    .contact-page form {
+        padding: 1rem;
     }
 }
 

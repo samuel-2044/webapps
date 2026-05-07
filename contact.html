@@ -20,43 +20,18 @@
         </nav>
     </header>
 
-    <main>
-        <section id="contact">
-            <div class="container">
-                <h1>Contact Me</h1>
-                <p>Feel free to reach out if you'd like to collaborate or learn more about my work!</p>
-                <div class="contact-info">
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+254 727 240 673</p>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:samuel.makokha757@gmail.com">samuel.makokha757@gmail.com</a></p>
-                    </div>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Nairobi, Langata<br>Postal Code: 00500</p>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+        <div class="container contact-page">
+            <h1>Contact Us</h1>
+            <p>This is our contact page</p>
+            <form action="">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="email" placeholder="Email Address" name="email" maxlength="50" required>
+                <input type="tel" placeholder="Phone Number" name="phone" maxlength="10" pattern="[0-9]{10}" required>
+                <input type="text" placeholder="Subject Line" name="subject" required>
+                <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
 <footer>
     <div class="footer-content">
@@ -74,3 +49,4 @@
     <script src="main.js"></script>
 </body>
 </html>
+
