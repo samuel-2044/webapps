@@ -9,28 +9,32 @@
    <body>
       <header>
          <nav>
-            <ul id="nav-menu">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="project.html">Projects</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="faqs.html">FAQs</a></li>
+            <ul class="nav-menu" id="nav-menu">
+               <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+               <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+               <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+               <li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
             </ul>
          </nav>
       </header>
-      <div class="container contact-page">
-         <h1>Contact Us</h1>
-         <p>This is our contact page</p>
-         <form action="">
-            <input type="text" placeholder="Full Name" name="name" required>
-            <input type="email" placeholder="Email Address" name="email" maxlength="50" required>
-            <input type="tel" placeholder="Phone Number" name="phone" maxlength="10" pattern="[0-9]{10}" required>
-            <input type="text" placeholder="Subject Line" name="subject" required>
-            <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
-            <button type="submit">Submit</button>
-         </form>
-      </div>
+      <main>
+         <section id="contact">
+            <div class="contact-page">
+               <h1>Get In Touch</h1>
+               <p>Have a question? I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.</p>
+               <form>
+                  <input type="text" placeholder="Full Name" name="name" required>
+                  <input type="email" placeholder="Email Address" name="email" maxlength="50" required>
+                  <input type="tel" placeholder="Phone Number" name="phone" maxlength="10" pattern="[0-9]{10}" required>
+                  <input type="text" placeholder="Subject Line" name="subject" required>
+                  <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                  <button type="submit">Send Message</button>
+               </form>
+            </div>
+         </section>
+      </main>
       <footer>
          <div class="footer-content">
             <p>&copy; 2026 Samuel Makokha. All rights reserved.</p>
